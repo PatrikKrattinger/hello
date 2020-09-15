@@ -1,0 +1,41 @@
+//
+//	GENERAL SETTINGS
+// ------------------------------------------------------
+
+@import "_mixins";
+@import "_variables";
+
+html { box-sizing: border-box; }
+
+*, *:before, *:after { @include box-sizing( inherit ); }
+
+body {
+	color: $color-main;
+	font: {
+		size: 100%;
+		family: 'Open Sans', sans-serif;
+		weight: normal;
+	}
+	margin: 0;
+}
+
+.wrapper {
+	position: relative;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.menu {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+
+	li, a {
+		display: inline-block;
+	}
+}
+
